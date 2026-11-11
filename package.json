@@ -1,0 +1,11 @@
+{
+  "name": "electro-phone",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/preview.js",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check public/assets/app.js && node --check public/assets/config.js && node --check server/preview.js && node --check netlify/functions/order.js"
+  },
+  "engines": { "node": ">=20" }
+}
